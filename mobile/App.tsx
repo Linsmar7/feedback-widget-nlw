@@ -1,12 +1,14 @@
+import "react-native-gesture-handler";
+import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
   Inter_400Regular,
   Inter_500Medium,
 } from "@expo-google-fonts/inter";
-import { Widget } from "./src/components/Widget";
+import Widget from "./src/components/Widget";
 import { theme } from "./src/theme";
 
 export default function App() {
@@ -19,8 +21,8 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <Widget />
       <StatusBar style="light" backgroundColor="transparent" translucent />
+      <Widget />
     </View>
   );
 }
