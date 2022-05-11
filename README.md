@@ -6,7 +6,7 @@
     <a href="#hammer-run-this-project">Installation</a>
 </p>
 
-### Feedback Widget is a component fixed in the right bottom corner of the website, used to send feedback via email.
+### Feedback Widget is a component fixed in the right bottom corner of the website, used to send feedback (a comment with or without a printscreen) via email.
 
 ## 👀 Preview
 
