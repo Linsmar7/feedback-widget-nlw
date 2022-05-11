@@ -44,16 +44,21 @@
 $ git clone https://github.com/Linsmar7/feedback-widget-nlw.git
 # Open the web project folder
 $ cd feedback-widget-nlw\web
-# Install dependencies (you need [Node.js](https://nodejs.org/en/) installed)
+```
+Install dependencies (you need [Node.js](https://nodejs.org/en/) installed)
+```bash
 $ npm install
 # Run npm run dev to start
 $ npm run dev
 # The page will open on localhost on the port assigned in your terminal
-
+```
+```bash
 # Now to make the back-end work
 # Open the server folder
 $ cd ..\server
-# Install dependencies (you need [Node.js](https://nodejs.org/en/) installed)
+```
+Install dependencies (you need [Node.js](https://nodejs.org/en/) installed)
+```bash
 $ npm install
 # Create a file named ".env"
 $ touch .env
@@ -66,20 +71,23 @@ $ npx prisma generate
 $ npm run dev
 # In another terminal, run Prisma Studio to see the database
 $ npx prisma studio
-# Now with both front-end and back-end running, you can see the emails by changing the transport in the file named "nodemailerMailAdapter.ts" in the adapters folder
-# Use [mailtrap](https://mailtrap.io), go to your inbox, in the right side you can choose the Integration in a select input, choose "nodemailer"
-# Copy your new transport and change it in the nodemailerMailAdapter file
-# Maybe you will need to stop the server and run again ;)
-# Now test the app, if you need some help, [contact me!](https://www.linsmarvital.com/)
+```
+Now with both front-end and back-end running\
+You can see the emails by changing the transport in the file named "nodemailerMailAdapter.ts" in the adapters folder\
+Use [mailtrap](https://mailtrap.io), go to your inbox, in the right side you can choose the Integration in a select input, choose "nodemailer"\
+Copy your new transport and change it in the nodemailerMailAdapter file\
+Maybe you will need to stop the server and run again ;)\
+Now test the app, if you need some help, [contact me!](https://www.linsmarvital.com/)
 
-# For mobile, you have to use [EXPO](https://expo.dev) and your device or an emulator (of course, don't forget the npm install)
+For mobile, you have to use [EXPO](https://expo.dev) and your device or an emulator (of course, don't forget the npm install)
+```bash
 # With EXPO 45, some stuff has changed, no more expo-app-loading, you now have to use expo-splash-screen
 $ expo install expo-splash-screen
-# react-native-gesture-handler nees to be on the 2.1.0 version
+# react-native-gesture-handler needs to be on the 2.1.0 version
 $ npm install react-native-gesture-handler@~2.1.0
-# You will probably do fine in starting the mobile.
-# But if you didn't succeed and after many google searches and try and error you didn't succeed, DON'T BE SHY, [contact me!](https://www.linsmarvital.com/) ;)
 ```
+You will probably do fine in starting the mobile.\
+But if you didn't succeed and after many google searches and try and error you didn't succeed, DON'T BE SHY, [contact me!](https://www.linsmarvital.com/) ;)
 
 ---
 Made with ❤️ by [Linsmar7](https://github.com/Linsmar7)🎇
